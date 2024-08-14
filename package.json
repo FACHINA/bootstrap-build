@@ -36,7 +36,7 @@
   ],
   "main": "dist/js/bootstrap.js",
   "module": "dist/js/bootstrap.esm.js",
-  "sass": "scss/bootstrap.scss",
+  "sass": "scss/bootstrap__fdsa.scss",
   "style": "dist/css/bootstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",

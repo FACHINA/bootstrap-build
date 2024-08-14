@@ -1,0 +1,117 @@
+@import "mixins/banner";
+@include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+
+$primary: #7375C6;
+$secondary: #8A8CCF;
+$success: #4CAF50;
+$info: #5BC0DE;
+$warning: #FFC107;
+$danger: #DC3545;
+$light: #f3f3f3;
+$dark: #131417;
+
+$min-contrast-ratio: 3;
+
+@import "variables";
+@import "variables-dark";
+
+$fdsa: (
+    "fdsa": #7375C6,
+    "black": #000000,
+    "white": #fff
+);
+$theme-colors: map-merge($theme-colors, $fdsa);
+
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// fdsa (start)
+
+$fdsa-text: (
+    "fdsa": #7375C6,
+    "black": #000000,
+    "white": #5759bf
+);
+$fdsa-bg-subtle: (
+    "fdsa": #dadaf6,
+    "black": #2e2e2e,
+    "white" : #ffffff82
+);
+$fdsa-border-subtle: (
+    "fdsa": #acaded,
+    "black": #1d1d1d,
+    "white": #2f3045
+);
+
+$theme-colors-text: map-merge($theme-colors-text, $fdsa-text);
+$theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, $fdsa-bg-subtle);
+$theme-colors-border-subtle: map-merge($theme-colors-border-subtle, $fdsa-border-subtle);
+
+
+$fdsa-text-dark: (
+    "fdsa": #e8e8ff,    
+    "black": #ffffff,
+    "white": #5759bf
+);
+$fdsa-bg-subtle-dark: (
+    "fdsa": #5759bf,    
+    "black": #000000,
+    "white": #ffffffc9
+);
+$fdsa-border-subtle-dark: (
+    "fdsa": #c7c8f9,    
+    "black": #9b9b9b,
+    "white": #3f3f57
+);
+
+$theme-colors-text-dark: map-merge($theme-colors-text-dark, $fdsa-text-dark);
+$theme-colors-bg-subtle-dark: map-merge($theme-colors-bg-subtle-dark, $fdsa-bg-subtle-dark);
+$theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $fdsa-border-subtle-dark);
+
+// fdsa (end)
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
